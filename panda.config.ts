@@ -1,4 +1,7 @@
 import { defineConfig } from "@pandacss/dev";
+import { getColors } from "theme-colors";
+
+const primaryColors = getColors("#1ba169");
 
 export default defineConfig({
 	// Whether to use css reset
@@ -15,7 +18,20 @@ export default defineConfig({
 
 	// Useful for theme customization
 	theme: {
-		extend: {},
+		extend: {
+			tokens: {
+				colors: {
+					primary: Object.entries(primaryColors).reduce(
+						// biome-ignore lint/suspicious/noExplicitAny: bro
+						(acc: any, [key, value]) => {
+							acc[key] = { value };
+							return acc;
+						},
+						{},
+					),
+				},
+			},
+		},
 	},
 
 	// Global css

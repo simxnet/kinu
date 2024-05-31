@@ -4,8 +4,11 @@ import { styled } from "@/styled-system/jsx";
 export const badge = cva({
 	base: {
 		fontWeight: "medium",
-		borderRadius: "sm",
+		borderRadius: "lg",
 		w: "fit",
+		display: "inline-flex",
+		alignItems: "center",
+		justifyContent: "center",
 	},
 	variants: {
 		color: {
@@ -25,22 +28,21 @@ export const badge = cva({
 				color: "yellow.500",
 				bg: "yellow.950",
 			},
-			purple: {
-				color: "purple.500",
-				bg: "purple.950",
+			primary: {
+				color: "primary.500",
+				bg: "primary.950",
 			},
 		},
 		size: {
 			md: {
 				fontSize: "sm",
-				px: "2",
+				px: "3",
 				py: "0.5",
 			},
 			lg: {
 				fontSize: "md",
-				px: "3",
+				px: "4",
 				py: "1",
-				borderRadius: "md",
 			},
 		},
 		isUppercase: {
@@ -50,7 +52,7 @@ export const badge = cva({
 		},
 	},
 	defaultVariants: {
-		color: "red",
+		color: "primary",
 		size: "md",
 		isUppercase: false,
 	},
