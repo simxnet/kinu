@@ -19,7 +19,7 @@
     "theme-colors": "^0.1.0"
   },
   "devDependencies": {
-    "@pandacss/dev": "^0.40.0",
+    "@pandacss/dev": "^0.41.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
