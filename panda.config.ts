@@ -33,7 +33,7 @@ export default defineConfig({
 			tokens: {
 				colors: {
 					brand: generateColorTokens(primaryColors),
-					background: generateColorTokens(backgroundColors),
+					bg: generateColorTokens(backgroundColors),
 					error: {
 						value: "#f31260",
 					},

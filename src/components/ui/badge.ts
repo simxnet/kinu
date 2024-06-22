@@ -29,8 +29,8 @@ export const badge = cva({
 				bg: "yellow.950",
 			},
 			primary: {
-				color: "primary.500",
-				bg: "primary.950",
+				color: "brand.500",
+				bg: "brand.950",
 			},
 		},
 		size: {

@@ -24,17 +24,17 @@ export const button = cva({
 		color: {
 			primary: {
 				bg: {
-					base: "primary.500",
-					_hover: "primary.600",
-					_active: "primary.700",
+					base: "brand.500",
+					_hover: "brand.600",
+					_active: "brand.700",
 				},
 				color: "ButtonText",
 			},
 			gray: {
 				bg: {
-					base: "stone.900",
-					_hover: "stone.800",
-					_active: "stone.700",
+					base: "bg.900",
+					_hover: "bg.800",
+					_active: "bg.700",
 				},
 				color: "white",
 			},

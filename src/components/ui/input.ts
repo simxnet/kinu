@@ -9,16 +9,16 @@ export const input = cva({
 		py: 2,
 		borderRadius: "lg",
 		bg: {
-			base: "stone.900",
-			_hover: "stone.800",
+			base: "bg.900",
+			_hover: "bg.800",
 		},
 		borderWidth: 1,
 		borderColor: {
-			base: "stone.800",
-			_hover: "stone.700",
+			base: "bg.800",
+			_hover: "bg.700",
 		},
 		_placeholder: {
-			color: "stone.400",
+			color: "bg.400",
 			fontStyle: "italic",
 		},
 	},
