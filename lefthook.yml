@@ -4,9 +4,9 @@ pre-commit:
       run: bun lint:staged
 
 commit-msg:
-  scripts:
-    "commitlint.sh":
-      runner: bash
+  commands:
+    "lint commit message":
+      run: bun run commitlint --edit {1}
 
 
 # EXAMPLE USAGE:
