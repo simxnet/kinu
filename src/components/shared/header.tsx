@@ -1,8 +1,8 @@
 import { css } from "@/styled-system/css";
 import { Container, Flex } from "@/styled-system/jsx";
-import { Heading } from "../ui/heading";
-import Link from "next/link";
 import { IconBrandGithubFilled } from "@tabler/icons-react";
+import Link from "next/link";
+import { Heading } from "../ui/heading";
 
 export default function Header() {
 	return (

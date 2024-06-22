@@ -1,10 +1,10 @@
 import Header from "@/components/shared/header";
 import { css } from "@/styled-system/css";
 import { Container } from "@/styled-system/jsx";
-import "@/styles/globals.css";
-
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+
+import "@/styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

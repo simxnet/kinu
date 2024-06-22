@@ -1,7 +1,18 @@
 import { defineConfig } from "@pandacss/dev";
 import { getColors } from "theme-colors";
 
-const primaryColors = getColors("#1ba169");
+const primaryColors = getColors("#1a9c66");
+const backgroundColors = getColors("#3A3A3A");
+
+function generateColorTokens(colors: Record<string, string>) {
+	return Object.entries(colors).reduce(
+		(acc: Record<string, { value: string }>, [key, value]) => {
+			acc[key] = { value };
+			return acc;
+		},
+		{},
+	);
+}
 
 export default defineConfig({
 	// Whether to use css reset
@@ -21,14 +32,14 @@ export default defineConfig({
 		extend: {
 			tokens: {
 				colors: {
-					primary: Object.entries(primaryColors).reduce(
-						// biome-ignore lint/suspicious/noExplicitAny: bro
-						(acc: any, [key, value]) => {
-							acc[key] = { value };
-							return acc;
-						},
-						{},
-					),
+					brand: generateColorTokens(primaryColors),
+					background: generateColorTokens(backgroundColors),
+					error: {
+						value: "#f31260",
+					},
+					success: {
+						value: "#00c06b",
+					},
 				},
 			},
 		},
@@ -38,8 +49,8 @@ export default defineConfig({
 	globalCss: {
 		extend: {
 			body: {
-				bg: "stone.950",
-				color: "stone.50",
+				bg: "bg.950",
+				color: "bg.50",
 			},
 		},
 	},

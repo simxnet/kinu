@@ -4,14 +4,14 @@ import Spinner from "@/components/shared/spinner";
 import { Badge } from "@/components/ui/badge";
 import { Button, button } from "@/components/ui/button";
 import { Heading } from "@/components/ui/heading";
+import { Input } from "@/components/ui/input";
+import { Text } from "@/components/ui/text";
+import { fadeInFromTopAndOutTop } from "@/lib/animation-variants";
 import { css } from "@/styled-system/css";
 import { Flex } from "@/styled-system/jsx";
-import { IconMoodHappyFilled } from "@tabler/icons-react";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
+import { IconMoodHappyFilled } from "@tabler/icons-react";
 import { AnimatePresence, motion } from "framer-motion";
-import { fadeInFromTopAndOutTop } from "@/lib/animation-variants";
-import { Text } from "@/components/ui/text";
-import { Input } from "@/components/ui/input";
 
 export default function Page() {
 	return (

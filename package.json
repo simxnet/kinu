@@ -1,29 +1,33 @@
 {
-  "name": "kinu",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "prepare": "panda codegen",
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@headlessui/react": "^2.0.4",
-    "@tabler/icons-react": "^3.5.0",
-    "framer-motion": "^11.2.10",
-    "next": "14.2.3",
-    "react": "^18",
-    "react-dom": "^18",
-    "theme-colors": "^0.1.0"
-  },
-  "devDependencies": {
-    "@pandacss/dev": "^0.40.0",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "typescript": "^5"
-  },
-  "author": "@simxnet"
+	"name": "kinu",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"prepare": "panda codegen",
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "bunx @biomejs/biome check --write src",
+		"lint:staged": "bunx @biomejs/biome check --write src",
+		"postinstall": "bunx lefthook install"
+	},
+	"dependencies": {
+		"@headlessui/react": "^2.1.0",
+		"@tabler/icons-react": "^3.6.0",
+		"framer-motion": "^11.2.11",
+		"next": "14.2.4",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"theme-colors": "^0.1.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.8.2",
+		"@pandacss/dev": "^0.41.0",
+		"@types/react": "^18.3.3",
+		"@types/react-dom": "^18.3.0",
+		"bun-types": "^1.1.15",
+		"lefthook": "^1.6.18",
+		"typescript": "^5.5.2"
+	},
+	"author": "@simxnet"
 }
